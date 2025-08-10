@@ -1,0 +1,22 @@
+/**
+ * Шрифты для сайта
+ * Inter - вариативный шрифт
+ * PressStart2P - пиксельный шрифт для заголовков
+ */
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400 785;
+  font-display: swap;
+  src: url(./Inter-Variable.woff2) format('woff2 supports variations'),
+       url(./Inter-Variable.woff2) format('woff2-variations');
+}
+
+@font-face {
+  font-family: PressStart2P;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./PressStart2P-Regular.woff) format('woff');
+}
