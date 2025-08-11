@@ -224,6 +224,12 @@
   z-index: 1;
 }
 
+.like-icon {
+  flex-shrink: 0;
+  block-size: 39px;
+  inline-size: 36px;
+}
+
 .page__button {
   align-items: center;
   display: flex;
