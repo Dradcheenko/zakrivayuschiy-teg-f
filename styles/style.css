@@ -3,7 +3,7 @@
   background-color: var(--page-background-color);
   background-image: var(--background-image);
   background-size: cover;
-  font-family: var(--main-font);
+  font-family: var(--main-font), Arial, sans-serif;
   font-variation-settings: "wght" var(--text-weight);
   min-block-size: 100dvb;
   min-inline-size: 320px;
@@ -15,7 +15,7 @@
   border: var(--border-width) solid var(--contour-color);
   display: flex;
   flex-direction: column;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   inline-size: 100%;
   margin: 100px auto;
   padding: clamp(120px, 0.75vw + 117.2px, 128px) 0;
@@ -97,7 +97,7 @@
 
 .card__image-label {
   color: var(--contour-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   font-size: 14px;
   font-weight: var(--text-weight);
   inset-block-start: 28px;
@@ -149,7 +149,7 @@
   border: var(--border-width) solid var(--contour-color);
   color: var(--contour-color);
   cursor: pointer;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   font-size: 14px;
   font-weight: var(--text-weight);
   line-height: 90%;
@@ -157,6 +157,9 @@
   position: relative;
   transition: box-shadow 0.3s ease;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:focus {
@@ -212,18 +215,13 @@
 
 .button__text {
   color: var(--page-background-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   font-size: 14px;
   font-weight: var(--text-weight);
   line-height: 90%;
   mix-blend-mode: difference;
   position: relative;
   z-index: 1;
-}
-
-.like-icon {
-  block-size: 36px;
-  inline-size: 39px;
 }
 
 .page__button {
@@ -279,7 +277,7 @@
 }
 
 .modal-window__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   line-height: 150%;
 }
 
@@ -288,6 +286,10 @@
   padding: 11px 0;
   text-transform: uppercase;
 }
+
+/* 
+ * АДАПТИВНОСТЬ
+ */
 
 @media (width < 376px) {
   .page__button {
